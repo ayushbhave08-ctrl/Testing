@@ -1,0 +1,8 @@
+TestCase_ID,Module,Test_Scenario,Test_Steps,Expected_Result,Status
+TC_BNK_01,Account,Create new account with valid details,"Enter Name, Email, Account Type, Initial Deposit -> Submit",Account created successfully with unique Account Number,Pass
+TC_BNK_02,Account,Create account with invalid email,"Enter invalid email format -> Submit",Validation error displayed,Pass
+TC_BNK_03,Deposit,Deposit valid amount to existing account,"Enter Account Number, Amount (₹5000) -> Submit",Amount credited and updated balance reflected,Pass
+TC_BNK_04,Withdrawal,Withdraw amount within balance limit,"Enter Account Number, Amount (₹2000) -> Submit",Amount debited and remaining balance displayed,Pass
+TC_BNK_05,Withdrawal,Withdraw amount exceeding current balance,"Enter withdrawal amount greater than balance -> Submit",Error: Insufficient balance displayed,Pass
+TC_BNK_06,Transfer,Fund transfer between active accounts,"Enter Source Acc, Target Acc, Amount -> Confirm",Funds transferred and transaction logged,Pass
+TC_BNK_07,Balance,Check balance for valid account,"Enter Account Number -> View Balance",Accurate real-time balance fetched,Pass
